@@ -60,17 +60,9 @@
     display: none;
   }
 
-  button.desktop-explorer {
-    display: flex;
-  }
-
   @media all and ($mobile) {
     button.mobile-explorer {
       display: flex;
-    }
-
-    button.desktop-explorer {
-      display: none;
     }
   }
 
@@ -90,8 +82,7 @@
   }
 }
 
-button.mobile-explorer,
-button.desktop-explorer {
+button.mobile-explorer {
   background-color: transparent;
   border: none;
   text-align: left;
@@ -124,6 +115,8 @@ button.desktop-explorer {
       color: var(--dark);
       opacity: 0.75;
       pointer-events: all;
+      font-size: 1.12rem;
+      line-height: 1.7rem;
 
       &.active {
         opacity: 1;
@@ -163,9 +156,9 @@ button.desktop-explorer {
   & div > a {
     color: var(--secondary);
     font-family: var(--headerFont);
-    font-size: 0.95rem;
+    font-size: 1.12rem;
     font-weight: $semiBoldWeight;
-    line-height: 1.5rem;
+    line-height: 1.7rem;
     display: inline-block;
   }
 
@@ -186,12 +179,12 @@ button.desktop-explorer {
     font-family: var(--headerFont);
 
     & span {
-      font-size: 0.95rem;
+      font-size: 1.12rem;
       display: inline-block;
       color: var(--secondary);
       font-weight: $semiBoldWeight;
       margin: 0;
-      line-height: 1.5rem;
+      line-height: 1.7rem;
       pointer-events: none;
     }
   }

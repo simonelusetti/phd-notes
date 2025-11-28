@@ -9,6 +9,7 @@ import Head from "./Head"
 import PageTitle from "./PageTitle"
 import ContentMeta from "./ContentMeta"
 import Spacer from "./Spacer"
+import HorizontalDivider from "./HorizontalDivider"
 import TableOfContents from "./TableOfContents"
 import Explorer from "./Explorer"
 import TagList from "./TagList"
@@ -50,4 +51,5 @@ export {
   Comments,
   Flex,
   ConditionalRender,
+  HorizontalDivider,
 }
