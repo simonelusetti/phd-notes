@@ -1,21 +1,9 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
-/**
- * Quartz Base Template — simonelusetti/quartz-base
- *
- * This file is the DEFAULT config used when no project-level quartz.config.ts
- * is provided. In practice, every content repo (notes-quartz, rpg-quartz, …)
- * supplies its own quartz.config.ts which is overlaid on top of this engine
- * at build time.
- *
- * To start a new site, copy this file into your content repo and replace:
- *   - pageTitle   → your site name
- *   - baseUrl     → YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME
- */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "My Quartz Site",
+    pageTitle: "notes",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -23,7 +11,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME",
+    baseUrl: "simonelusetti.github.io/notes-quartz",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
